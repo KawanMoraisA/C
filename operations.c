@@ -13,7 +13,7 @@ int main(){
     int sum = a + b;
     int sub = a - b;
     int mult = a * b;
-    int div = a / b;
+    float div = (float)a / b;
 
     a += 2;
     b *=3;
@@ -24,7 +24,7 @@ int main(){
     printf("\n\nThe sum of A + B is: %d \n", sum);
     printf("The subtraction of A - B is: %d \n", sub);
     printf("The multiply of A * B is: %d \n", mult);
-    printf("The division of A / B is: %d \n", div);
+    printf("The division of A / B is: %.2f \n", div);
     printf("New value of A(After += 2 and ++): %d \n", a);
     printf("New value of B(After *= 3 and --): %d \n", b);
 }
